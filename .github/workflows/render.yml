@@ -23,17 +23,15 @@ jobs:
 
     - name: Install dependencies (Frontend)
       run: |
-        cd frontend
         npm install
 
     - name: Build frontend
       run: |
-        cd frontend
         npm run build
   
 
     - name: Trigger front-end redeploy
       run: |
           curl -X GET \
-            #
+            https://api.render.com/deploy/srv-cqr2m4g8fa8c73fmtar0?key=Cp1R_fyjJpQ
             
